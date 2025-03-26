@@ -1,4 +1,3 @@
-// /app/api/auth/login/route.js
 import { NextResponse } from 'next/server';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
@@ -49,9 +48,9 @@ export async function POST(request) {
     // Set cookie
     response.cookies.set('token', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
+      secure: false,
       sameSite: 'strict',
-      maxAge: 60 * 60, // 1 hour in seconds
+      maxAge: 60 * 60, 
       path: '/',
     });
 

@@ -1,6 +1,6 @@
 // app/layout.js
 import NavBar from "./NavBar";
-import "./globals.css"; // if you have global CSS
+import "./globals.css"; 
 
 export const metadata = {
   title: "My Next.js App",

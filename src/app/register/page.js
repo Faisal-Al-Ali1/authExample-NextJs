@@ -25,11 +25,9 @@ export default function RegisterPage() {
         password,
       });
       
-      // Mark success in state
       setMessage(response.data.message || "Registered successfully!");
       setIsSuccess(true);
 
-      // Wait 2s then redirect to login page
       setTimeout(() => {
         router.push("/login");
       }, 2000);

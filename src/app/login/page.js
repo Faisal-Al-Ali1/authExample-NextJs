@@ -23,11 +23,9 @@ export default function LoginPage() {
         password,
       });
       
-      // Mark success in state
       setMessage(response.data.message || "Login successful!");
       setIsSuccess(true);
 
-      // Wait 2s then redirect to homepage
       setTimeout(() => {
         router.push("/");
       }, 2000);
