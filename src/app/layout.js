@@ -1,4 +1,3 @@
-// app/layout.js
 import NavBar from "./NavBar";
 import "./globals.css"; 
 
